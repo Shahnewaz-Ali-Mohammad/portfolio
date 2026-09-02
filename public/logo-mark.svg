@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12362a"/>
+      <stop offset="100%" stop-color="#0a2119"/>
+    </linearGradient>
+    <linearGradient id="letter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6d98a"/>
+      <stop offset="100%" stop-color="#d99c2b"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="15" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="15" fill="none" stroke="rgba(217,156,43,0.45)" stroke-width="1"/>
+  <rect x="4" y="4" width="56" height="20" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Iowan Old Style, Baskerville, Georgia, serif" font-size="27" font-weight="600" fill="url(#letter)">SA</text>
+</svg>
