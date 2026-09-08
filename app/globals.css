@@ -1678,7 +1678,7 @@ svg {
 
 .hero-browser-stack {
   position: relative;
-  width: min(100%, 760px);
+  width: min(100%, 820px);
   height: clamp(390px, 34vw, 520px);
   margin-inline: auto;
   isolation: isolate;
@@ -1690,8 +1690,8 @@ svg {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: min(86%, 660px);
-  height: clamp(250px, 23vw, 350px);
+  width: min(74%, 620px);
+  height: clamp(230px, 20vw, 320px);
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1715,17 +1715,17 @@ svg {
   z-index: 3;
   border-color: rgba(13, 47, 37, .36);
   box-shadow: 0 34px 82px rgba(13, 47, 37, .25);
-  transform: translate(-55%, -50%) translateZ(90px) rotate(-3deg);
+  transform: translate(-57%, -40%) translateZ(95px) rotate(-4deg);
 }
 
 .hero-browser-card.stack-position-1 {
   z-index: 2;
-  transform: translate(-37%, -72%) translateZ(10px) rotate(3deg) scale(.92);
+  transform: translate(-28%, -76%) translateZ(18px) rotate(3deg) scale(.96);
 }
 
 .hero-browser-card.stack-position-2 {
   z-index: 1;
-  transform: translate(-26%, -26%) translateZ(-55px) rotate(1deg) scale(.88);
+  transform: translate(-72%, -58%) translateZ(-45px) rotate(-1deg) scale(.82);
 }
 
 .hero-browser-card:hover,
@@ -1831,20 +1831,20 @@ svg {
   }
 
   .hero-browser-card {
-    width: min(86%, 620px);
-    height: clamp(225px, 42vw, 330px);
+    width: min(76%, 620px);
+    height: clamp(215px, 40vw, 320px);
   }
 
   .hero-browser-card.stack-position-0 {
-    transform: translate(-55%, -48%) translateZ(70px) rotate(-2.5deg);
+    transform: translate(-57%, -39%) translateZ(70px) rotate(-3deg);
   }
 
   .hero-browser-card.stack-position-1 {
-    transform: translate(-36%, -70%) translateZ(8px) rotate(2.5deg) scale(.92);
+    transform: translate(-28%, -73%) translateZ(8px) rotate(2.5deg) scale(.95);
   }
 
   .hero-browser-card.stack-position-2 {
-    transform: translate(-26%, -24%) translateZ(-38px) rotate(1deg) scale(.88);
+    transform: translate(-72%, -57%) translateZ(-34px) rotate(-1deg) scale(.82);
   }
 }
 
@@ -1859,21 +1859,21 @@ svg {
   }
 
   .hero-browser-card {
-    width: 88%;
-    height: 190px;
+    width: 78%;
+    height: 180px;
     border-radius: 7px;
   }
 
   .hero-browser-card.stack-position-0 {
-    transform: translate(-55%, -48%) translateZ(45px) rotate(-2deg);
+    transform: translate(-57%, -39%) translateZ(45px) rotate(-2.5deg);
   }
 
   .hero-browser-card.stack-position-1 {
-    transform: translate(-37%, -72%) translateZ(4px) rotate(2deg) scale(.91);
+    transform: translate(-29%, -73%) translateZ(4px) rotate(2deg) scale(.94);
   }
 
   .hero-browser-card.stack-position-2 {
-    transform: translate(-27%, -23%) translateZ(-24px) rotate(.75deg) scale(.86);
+    transform: translate(-73%, -57%) translateZ(-24px) rotate(-.75deg) scale(.82);
   }
 
   .hero-browser-card .browser-bar {

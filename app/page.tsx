@@ -71,8 +71,8 @@ function TypedHeadline() {
 
 function HeroShowcase() {
   const projects = [
-    { src: "/projects/captures/wander-home.png", label: "Wander", domain: "wander.com" },
     { src: "/projects/captures/compass-home.png", label: "Compass Group", domain: "compassgroup.com" },
+    { src: "/projects/captures/wander-home.png", label: "Wander", domain: "wander.com" },
     { src: "/projects/captures/tastebite-home.png", label: "TasteBite", domain: "tastebite.com" },
   ];
   const [active, setActive] = useState(0);
