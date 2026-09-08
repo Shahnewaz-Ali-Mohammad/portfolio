@@ -77,16 +77,19 @@ function HeroShowcase() {
   ];
   const [active, setActive] = useState(0);
   useEffect(() => { const timer = window.setInterval(() => setActive((current) => (current + 1) % projects.length), 5200); return () => window.clearInterval(timer); }, [projects.length]);
-  const current = projects[active];
   return <div className="hero-showcase" aria-label="Selected project previews">
-    <div className="browser-window">
-      <div className="browser-bar">
-        <span className="browser-dots" aria-hidden="true"><i /><i /><i /></span>
-        <span className="browser-address"><span key={current.domain} className="browser-address-text">{current.domain}</span></span>
-      </div>
-      <div className="browser-image-deck">{projects.map((project, index) => <img className={`browser-carousel-image${index === active ? " active" : ""}`} src={assetPath(project.src)} alt={`${project.label} project preview`} aria-hidden={index !== active} key={project.src} />)}</div>
+    <div className="hero-browser-stack">
+      {projects.map((project, index) => {
+        const position = (index - active + projects.length) % projects.length;
+        return <button className={`hero-browser-card stack-position-${position}`} type="button" onClick={() => setActive(index)} aria-label={`Show ${project.label} preview`} aria-current={position === 0} key={project.src}>
+          <span className="browser-bar">
+            <span className="browser-dots" aria-hidden="true"><i /><i /><i /></span>
+            <span className="browser-address"><span className="browser-address-text">{project.domain}</span></span>
+          </span>
+          <span className="browser-image-deck"><img src={assetPath(project.src)} alt={`${project.label} project preview`} /></span>
+        </button>;
+      })}
     </div>
-    <div className="browser-tabs" role="tablist" aria-label="Choose project preview">{projects.map((project, index) => <button type="button" role="tab" aria-selected={index === active} className={index === active ? "active" : ""} onClick={() => setActive(index)} key={project.src}><span>0{index + 1}</span>{project.label}</button>)}</div>
   </div>;
 }
 
